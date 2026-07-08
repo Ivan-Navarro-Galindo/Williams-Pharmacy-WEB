@@ -10,11 +10,11 @@ Tailwind CSS, and intended to deploy on Vercel.
 ## Run it
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm run lint     # ESLint
-npm run format   # Prettier (Tailwind class sorting)
+pnpm install
+pnpm dev         # http://localhost:3000
+pnpm build       # production build
+pnpm lint        # ESLint
+pnpm format      # Prettier (Tailwind class sorting)
 ```
 
 ## Routes
