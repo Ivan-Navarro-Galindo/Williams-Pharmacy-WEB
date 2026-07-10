@@ -20,12 +20,18 @@ export const nav: NavItem[] = [
 
 export const site = {
   name: "William's Pharmacy",
+  tagline: "Your Health First Since 1882",
   // Real, public address of the pharmacy.
   address: {
     street: "Tower Road",
     locality: "Birkirkara",
     postalCode: "BKR 4018",
     country: "Malta",
+    // Coordinates from the pharmacy's Google Maps listing, used for the map embed / directions link.
+    lat: 35.8982022,
+    lng: 14.4780673,
+    // Google's internal place id (from the listing URL), used to embed the exact map card below.
+    placeCid: "0x130e5bfb29ee8863:0x26d85f5958ef7976",
   },
   // Replace the placeholders below with the real contact details.
   PLACEHOLDER_phone: "+356 0000 0000",

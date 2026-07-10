@@ -1,6 +1,7 @@
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ContactForm from "./ContactForm";
+import MapEmbed from "@/components/contact/MapEmbed";
 import { contact } from "@/content/pages";
 import { site } from "@/content/site";
 import { createMetadata } from "@/lib/seo";
@@ -69,17 +70,7 @@ export default function ContactPage() {
               </div>
             </dl>
 
-            {/* Map placeholder — a real Google Maps embed will load here behind a consent gate. */}
-            <div
-              role="img"
-              aria-label="Placeholder for a map showing the pharmacy location"
-              className="border-navy-300 bg-navy-50 mt-8 flex aspect-[16/10] items-center justify-center rounded-2xl border border-dashed p-6 text-center"
-            >
-              <p className="text-navy-500 max-w-xs text-sm">
-                Map placeholder. A Google Maps embed will appear here once
-                cookie consent is added.
-              </p>
-            </div>
+            <MapEmbed />
           </div>
         </div>
       </Container>

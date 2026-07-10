@@ -4,7 +4,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Container from "@/components/ui/Container";
-import { nav, site } from "@/content/site";
+import Logo from "@/components/layout/Logo";
+import { nav } from "@/content/site";
 
 export default function Header() {
   const pathname = usePathname();
@@ -43,14 +44,7 @@ export default function Header() {
       }`}
     >
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link
-          href="/"
-          className={`font-display text-lg font-semibold tracking-tight sm:text-xl ${
-            solid ? "text-navy-800" : "text-white"
-          }`}
-        >
-          {site.name}
-        </Link>
+        <Logo solid={solid} />
 
         <nav aria-label="Primary" className="hidden md:block">
           <ul className="flex items-center gap-8">

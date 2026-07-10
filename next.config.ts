@@ -4,8 +4,7 @@ import type { NextConfig } from "next";
   Basic Content-Security-Policy.
   'unsafe-inline' is needed for Next.js bootstrap scripts, the JSON-LD tag and
   injected styles; 'unsafe-eval' keeps `next dev` working. Tighten with nonces
-  before launch. When the Google Maps embed is added, allow its frame/img/script
-  origins here (e.g. frame-src https://www.google.com).
+  before launch. frame-src allows the Google Maps embed on the contact page.
 */
 const csp = [
   "default-src 'self'",
@@ -14,6 +13,7 @@ const csp = [
   "img-src 'self' data: blob:",
   "font-src 'self'",
   "connect-src 'self'",
+  "frame-src https://www.google.com",
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",
