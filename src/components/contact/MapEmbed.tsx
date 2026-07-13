@@ -3,7 +3,11 @@
 import { useState } from "react";
 import { site } from "@/content/site";
 
-const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${site.address.lat},${site.address.lng}`;
+// query_place_id opens the actual listing (name, rating, photo) instead of a
+// bare pair of coordinates; query is the fallback Google uses if the id ever changes.
+const directionsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  site.name,
+)}&query_place_id=${site.address.placeId}`;
 
 // Same "pb" embed format Google's own Share > Embed a map button generates.
 // Unlike the informal `maps?q=...&output=embed` query, this route isn't

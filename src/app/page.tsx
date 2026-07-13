@@ -3,13 +3,9 @@ import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Reveal from "@/components/ui/Reveal";
-import ProductCard from "@/components/catalog/ProductCard";
-import { getProducts } from "@/data/products";
 import { home } from "@/content/pages";
 
 export default function Home() {
-  const featured = getProducts().slice(0, 3);
-
   return (
     <>
       {/* Editorial split hero. Pulled up under the sticky, transparent header
@@ -27,14 +23,7 @@ export default function Home() {
               {home.PLACEHOLDER_lede}
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
-              <Button href="/catalog">Browse the catalog</Button>
-              <Button
-                href="/contact"
-                variant="outline"
-                className="hover:text-navy-900 border-white text-white hover:bg-white"
-              >
-                Visit us
-              </Button>
+              <Button href="/contact">Visit us</Button>
             </div>
           </div>
 
@@ -76,29 +65,6 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-        </Container>
-      </section>
-
-      {/* Featured products (read via getProducts). */}
-      <section className="bg-navy-50 py-24 sm:py-32">
-        <Container>
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <SectionHeading
-              eyebrow="In store"
-              title="A few things you'll find"
-              className="max-w-xl"
-            />
-            <Button href="/catalog" variant="outline">
-              See the full catalog
-            </Button>
-          </div>
-          <ul className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featured.map((product) => (
-              <li key={product.id}>
-                <ProductCard product={product} />
-              </li>
-            ))}
-          </ul>
         </Container>
       </section>
     </>

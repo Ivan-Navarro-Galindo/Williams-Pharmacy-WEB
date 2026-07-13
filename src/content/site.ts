@@ -11,7 +11,6 @@ export type NavItem = {
 
 export const nav: NavItem[] = [
   { href: "/", label: "Home" },
-  { href: "/catalog", label: "Catalog" },
   { href: "/about", label: "About" },
   { href: "/team", label: "Team" },
   { href: "/gallery", label: "Gallery" },
@@ -32,6 +31,9 @@ export const site = {
     lng: 14.4780673,
     // Google's internal place id (from the listing URL), used to embed the exact map card below.
     placeCid: "0x130e5bfb29ee8863:0x26d85f5958ef7976",
+    // Google's public Place ID, used so "Open in Google Maps" opens the actual
+    // listing (name, reviews, photo) instead of a bare pair of coordinates.
+    placeId: "ChIJY4juKftbDhMRdnnvWFlf2CY",
   },
   // Replace the placeholders below with the real contact details.
   PLACEHOLDER_phone: "+356 0000 0000",
