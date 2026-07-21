@@ -27,11 +27,10 @@ export function createMetadata({
       type: "website",
       images: [
         {
-          // PLACEHOLDER Open Graph image — replace with a real 1200×630 asset.
-          url: "/images/og-placeholder.svg",
+          url: "/images/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: `${site.name} (placeholder)`,
+          alt: site.name,
         },
       ],
     },

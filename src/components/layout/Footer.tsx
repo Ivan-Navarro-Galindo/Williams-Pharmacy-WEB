@@ -1,13 +1,12 @@
-import Link from "next/link";
 import Container from "@/components/ui/Container";
-import { nav, site } from "@/content/site";
+import { site } from "@/content/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-navy-900 text-navy-100 mt-auto">
-      <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-4">
+      <Container className="grid gap-12 py-16 sm:grid-cols-2 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <p className="font-display text-xl font-semibold text-white">
             {site.name}
@@ -55,30 +54,12 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
-        <nav aria-label="Footer">
-          <h2 className="text-gold-300 text-sm font-semibold tracking-[0.15em] uppercase">
-            Explore
-          </h2>
-          <ul className="text-navy-200 mt-4 space-y-2">
-            {nav.map((item) => (
-              <li key={item.href}>
-                <Link className="hover:text-white" href={item.href}>
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
       </Container>
 
       <div className="border-navy-700 border-t">
-        <Container className="text-navy-300 flex flex-col gap-2 py-6 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <Container className="text-navy-300 py-6 text-sm">
           <p>
             © {year} {site.name}. All rights reserved.
-          </p>
-          <p className="text-navy-400">
-            Placeholder content — for demonstration only.
           </p>
         </Container>
       </div>

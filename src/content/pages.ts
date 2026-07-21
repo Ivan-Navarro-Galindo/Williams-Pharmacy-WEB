@@ -99,15 +99,16 @@ export const gallery = {
   PLACEHOLDER_eyebrow: "Inside the pharmacy",
   PLACEHOLDER_title: "Gallery",
   PLACEHOLDER_intro:
-    "Placeholder images of the pharmacy. Swap these for real photography of the storefront, interior and team.",
+    "A look inside William's Pharmacy, past and present — more photos to come.",
   images: [
     {
-      src: "/images/gallery/g1.svg",
-      PLACEHOLDER_alt: "Placeholder photo of the pharmacy",
+      src: "/images/gallery/Colección.jpeg",
+      PLACEHOLDER_alt: "A shelf of antique medicine tins and a brass scale",
     },
     {
-      src: "/images/gallery/g2.svg",
-      PLACEHOLDER_alt: "Placeholder photo of the pharmacy",
+      src: "/images/gallery/Colección2.jpeg",
+      PLACEHOLDER_alt:
+        "A cabinet of vintage first aid tins and pharmacy memorabilia",
     },
     {
       src: "/images/gallery/g3.svg",
@@ -118,8 +119,8 @@ export const gallery = {
       PLACEHOLDER_alt: "Placeholder photo of the pharmacy",
     },
     {
-      src: "/images/gallery/g5.svg",
-      PLACEHOLDER_alt: "Placeholder photo of the pharmacy",
+      src: "/images/gallery/Mueble2.jpeg",
+      PLACEHOLDER_alt: "Shelves of skincare and cosmetics inside the pharmacy",
     },
     {
       src: "/images/gallery/g6.svg",

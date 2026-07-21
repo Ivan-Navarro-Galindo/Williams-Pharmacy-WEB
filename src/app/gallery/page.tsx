@@ -25,7 +25,7 @@ export default function GalleryPage() {
           {gallery.images.map((image, i) => (
             <li key={image.src}>
               <Reveal delay={(i % 3) * 80}>
-                <div className="bg-navy-50 relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <div className="bg-navy-50 relative aspect-4/3 overflow-hidden rounded-2xl">
                   <Image
                     src={image.src}
                     alt={image.PLACEHOLDER_alt}

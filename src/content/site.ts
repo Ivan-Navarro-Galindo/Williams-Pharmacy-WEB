@@ -36,7 +36,9 @@ export const site = {
     placeId: "ChIJY4juKftbDhMRdnnvWFlf2CY",
   },
   // Replace the placeholders below with the real contact details.
-  PLACEHOLDER_phone: "+356 0000 0000",
+  PLACEHOLDER_phone: "+356 79688880",
+  PLACEHOLDER_phone2: "+356 21686880",
+
   PLACEHOLDER_email: "hello@example.com",
   // Live production URL, used for metadata, canonical links, the sitemap and
   // robots.txt. Update if a custom domain is connected in Vercel later.
@@ -47,8 +49,7 @@ export const site = {
   PLACEHOLDER_googleSiteVerification: "",
   // Opening hours are placeholders — confirm with the pharmacy.
   PLACEHOLDER_hours: [
-    { days: "Monday – Friday", time: "08:00 – 19:00" },
-    { days: "Saturday", time: "08:00 – 13:00" },
+    { days: "Monday – Saturday", time: "08:00 – 19:30" },
     { days: "Sunday & Public Holidays", time: "Closed" },
   ],
 } as const;

@@ -32,15 +32,30 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          <div className="lg:col-span-6">
-            <div className="bg-navy-50 relative aspect-[4/5] overflow-hidden rounded-3xl">
+          <div className="lg:col-span-6 space-y-6">
+            <div className="bg-navy-50 relative aspect-16/10 overflow-hidden rounded-3xl">
               <Image
-                src="/images/storefront.svg"
-                alt="Placeholder image of the pharmacy storefront on Tower Road"
+                src="/images/gallery/Entrada.jpeg"
+                alt="The entrance of William's Pharmacy on Tower Road, Birkirkara"
                 fill
                 sizes="(min-width: 1024px) 45vw, 90vw"
                 className="object-cover"
               />
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="bg-navy-50 relative aspect-3/4 w-24 shrink-0 overflow-hidden rounded-2xl sm:w-28">
+                <Image
+                  src="/images/gallery/Estante.jpeg"
+                  alt="A framed portrait of the pharmacy's founder, on display in store"
+                  fill
+                  sizes="112px"
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-navy-600 text-sm leading-relaxed">
+                A portrait of our founder still watches over the shop floor —
+                part of the story since 1882.
+              </p>
             </div>
           </div>
         </Container>

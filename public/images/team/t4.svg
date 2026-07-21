@@ -1,6 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Placeholder: Team member 4">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Placeholder portrait of a pharmacist in a white coat">
   <rect width="600" height="600" fill="#152442"/>
   <rect x="14" y="14" width="572" height="572" fill="none" stroke="#C4A157" stroke-width="2" opacity="0.7"/>
-  <text x="50%" y="45%" fill="#C4A157" font-family="Georgia, 'Times New Roman', serif" font-size="50" letter-spacing="4" text-anchor="middle">PLACEHOLDER</text>
-  <text x="50%" y="56%" fill="#C3CBDD" font-family="Arial, sans-serif" font-size="27" text-anchor="middle">Team member 4</text>
+  <path d="M300 260 C420 260 510 340 510 460 L510 600 L90 600 L90 460 C90 340 180 260 300 260 Z" fill="#F5F7FA"/>
+  <path d="M300 268 L250 400 L300 432 L350 400 Z" fill="#E1E6EF"/>
+  <circle cx="300" cy="205" r="92" fill="#E1E6EF"/>
+  <circle cx="300" cy="458" r="9" fill="#C4A157"/>
+  <circle cx="300" cy="506" r="9" fill="#C4A157"/>
 </svg>

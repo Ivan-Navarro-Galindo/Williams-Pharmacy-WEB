@@ -30,8 +30,8 @@ export default function Home() {
           <div className="lg:col-span-6">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl ring-1 ring-white/15">
               <Image
-                src="/images/hero.svg"
-                alt="Placeholder image of the pharmacy interior"
+                src="/images/gallery/Mueble.jpeg"
+                alt="Shelves of medicines and health products inside William's Pharmacy"
                 fill
                 priority
                 sizes="(min-width: 1024px) 45vw, 90vw"
