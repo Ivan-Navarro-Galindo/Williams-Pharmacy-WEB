@@ -7,8 +7,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
   title: "Gallery",
-  description:
-    "A placeholder gallery of William's Pharmacy in Birkirkara. Replace with real photography.",
+  description: "A gallery of William's Pharmacy in Birkirkara.",
   path: "/gallery",
 });
 

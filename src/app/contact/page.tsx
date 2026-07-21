@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Contact",
   description:
-    "Contact William's Pharmacy on Tower Road, Birkirkara. Phone, email and opening hours. (Placeholder details.)",
+    "Contact William's Pharmacy on Tower Road, Birkirkara. Phone, email and opening hours.",
   path: "/contact",
 });
 

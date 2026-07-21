@@ -40,14 +40,14 @@ export function createMetadata({
 
 /**
  * Schema.org Pharmacy structured data.
- * Address is real; phone, email and opening hours are placeholders (see content/site.ts).
+ * Address and geo are real; phone, email and opening hours are placeholders (see content/site.ts).
  */
 export function pharmacyJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Pharmacy",
     name: site.name,
-    url: site.PLACEHOLDER_url,
+    url: site.url,
     telephone: site.PLACEHOLDER_phone,
     email: site.PLACEHOLDER_email,
     address: {
@@ -56,6 +56,11 @@ export function pharmacyJsonLd() {
       addressLocality: site.address.locality,
       postalCode: site.address.postalCode,
       addressCountry: "MT",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: site.address.lat,
+      longitude: site.address.lng,
     },
     openingHoursSpecification: openingHoursSpec.map((spec) => ({
       "@type": "OpeningHoursSpecification",

@@ -19,19 +19,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.PLACEHOLDER_url),
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name} · Pharmacy in Birkirkara, Malta`,
     template: `%s · ${site.name}`,
   },
   description:
-    "William's Pharmacy on Tower Road, Birkirkara — a community pharmacy offering wellness, skincare and mother-and-baby products, with advice you can trust. (Placeholder description.)",
+    "William's Pharmacy on Tower Road, Birkirkara — a community pharmacy offering wellness, skincare and mother-and-baby products, with advice you can trust.",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_MT",
     siteName: site.name,
     url: "/",
   },
+  verification: site.PLACEHOLDER_googleSiteVerification
+    ? { google: site.PLACEHOLDER_googleSiteVerification }
+    : undefined,
 };
 
 export default function RootLayout({

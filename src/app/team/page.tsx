@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Team",
   description:
-    "Meet the pharmacists and staff at William's Pharmacy in Birkirkara. (Placeholder names and photos.)",
+    "Meet the pharmacists and staff at William's Pharmacy in Birkirkara.",
   path: "/team",
 });
 

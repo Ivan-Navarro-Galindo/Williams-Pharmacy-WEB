@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "About",
   description:
-    "About William's Pharmacy — a community pharmacy on Tower Road, Birkirkara. (Placeholder content.)",
+    "About William's Pharmacy — a community pharmacy on Tower Road, Birkirkara.",
   path: "/about",
 });
 

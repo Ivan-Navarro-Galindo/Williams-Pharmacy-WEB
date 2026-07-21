@@ -38,8 +38,13 @@ export const site = {
   // Replace the placeholders below with the real contact details.
   PLACEHOLDER_phone: "+356 0000 0000",
   PLACEHOLDER_email: "hello@example.com",
-  // Absolute site URL used for metadata / sitemap. Update to the live domain.
-  PLACEHOLDER_url: "https://www.williams-pharmacy.example",
+  // Live production URL, used for metadata, canonical links, the sitemap and
+  // robots.txt. Update if a custom domain is connected in Vercel later.
+  url: "https://williams-pharmacy-web.vercel.app",
+  // Content of the "google-site-verification" meta tag from Google Search
+  // Console (Settings > Ownership verification > HTML tag). Leave empty until
+  // the property is created — the tag is only rendered when this is set.
+  PLACEHOLDER_googleSiteVerification: "",
   // Opening hours are placeholders — confirm with the pharmacy.
   PLACEHOLDER_hours: [
     { days: "Monday – Friday", time: "08:00 – 19:00" },

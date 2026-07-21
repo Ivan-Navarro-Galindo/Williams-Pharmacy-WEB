@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { nav, site } from "@/content/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = site.PLACEHOLDER_url.replace(/\/$/, "");
+  const base = site.url.replace(/\/$/, "");
   const lastModified = new Date();
 
   return nav.map((item) => ({
