@@ -22,7 +22,7 @@ export const site = {
   tagline: "Your Health First Since 1882",
   // Real, public address of the pharmacy.
   address: {
-    street: "Tower Road",
+    street: "Tower Road, Swatar",
     locality: "Birkirkara",
     postalCode: "BKR 4018",
     country: "Malta",
